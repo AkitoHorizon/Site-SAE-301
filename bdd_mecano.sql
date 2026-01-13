@@ -303,7 +303,7 @@ ALTER TABLE `inscription`
 
 --
 -- Contraintes pour la table `media`
---;;;
+--versio
 ALTER TABLE `media`
   ADD CONSTRAINT `fk_media_envoye_par` FOREIGN KEY (`envoye_par_id`) REFERENCES `utilisateur` (`id`) ON DELETE SET NULL,
   ADD CONSTRAINT `fk_media_evenement` FOREIGN KEY (`evenement_id`) REFERENCES `evenement` (`id`) ON DELETE CASCADE;
